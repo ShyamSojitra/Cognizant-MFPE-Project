@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-content>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <h2>Claim Status</h2>
+            <mat-error *ngIf="invalid">
+                Something is wrong, is it you?
+            </mat-error>
+            <mat-form-field class="full-width-input">
+                <input matInput type="number" placeholder="Member Id" formControlName="memberId" required>
+                <mat-error>
+                    Please provide a valid member id
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input matInput type="number" placeholder="Policy Id" formControlName="policyId" required>
+                <mat-error>
+                    Please provide a valid policy id
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <input matInput type="number" placeholder="Claim Id" formControlName="claimid" required>
+                <mat-error>
+                    Please provide a valid claim id
+                </mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="primary">Status</button>
+        </form>
+    </mat-card-content>
+</mat-card>

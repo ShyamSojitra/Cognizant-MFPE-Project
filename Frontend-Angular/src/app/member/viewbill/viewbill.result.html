@@ -1,0 +1,35 @@
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="memberId">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let element"> {{element.memberId}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="subsDate">
+        <th mat-header-cell *matHeaderCellDef> Subscription Date </th>
+        <td mat-cell *matCellDef="let element"> {{element.subsDate}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="premiumDueDate">
+        <th mat-header-cell *matHeaderCellDef> Premium Due Date </th>
+        <td mat-cell *matCellDef="let element"> {{element.premiumDueDate}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="capAmount">
+        <th mat-header-cell *matHeaderCellDef> Cap Percentage </th>
+        <td mat-cell *matCellDef="let element"> {{element.capAmount}} </td>
+    </ng-container>
+    <ng-container matColumnDef="policyId">
+        <th mat-header-cell *matHeaderCellDef> Policy Id </th>
+        <td mat-cell *matCellDef="let element"> {{element.policyId}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<h1>{{this.data.policyId}}</h1>

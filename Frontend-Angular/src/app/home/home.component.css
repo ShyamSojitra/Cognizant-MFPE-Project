@@ -1,0 +1,25 @@
+.header{
+    text-align: center;
+}
+.header h1{
+    margin-top: 4% ;
+    color:rgb(133, 113, 0);
+    margin-bottom: 2%;
+}
+.header h3{
+    margin-top: 2% ;
+    color:rgb(0, 95, 133);
+    margin-bottom: 4%;
+}
+.s{
+    background-color: rgb(255, 255, 115);
+    color: rebeccapurple;
+}
+.c{
+    background-color: rgb(255, 115, 145);
+    color: rgb(51, 92, 153);
+}
+.v{
+    background-color: rgb(115, 192, 255);
+    color: rgb(153, 51, 51);
+}

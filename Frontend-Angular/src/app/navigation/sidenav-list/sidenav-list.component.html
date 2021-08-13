@@ -1,0 +1,24 @@
+<mat-nav-list>
+  <a mat-list-item routerLink="/submitclaim" (click)="onClose()">
+    <mat-icon>home</mat-icon>
+    <span class="nav-caption">Home</span>
+  </a>
+  <a mat-list-item routerLink="/submitclaim" (click)="onClose()">
+    <mat-icon>redeem</mat-icon>
+    <span class="nav-caption">Submit Claim</span>
+  </a>
+  <a mat-list-item routerLink="/claimstatus" (click)="onClose()">
+    <mat-icon>credit_score</mat-icon>
+    <span class="nav-caption">Claim Status</span>
+  </a>
+  <a mat-list-item routerLink="/viewbill" (click)="onClose()">
+    <mat-icon>payments</mat-icon>
+    <span class="nav-caption">View Bill</span>
+  </a>
+  <mat-list-item>
+    <button mat-icon-button routerLink="/" (click)="onClose()">
+      <mat-icon>logout</mat-icon>
+      <span class="nav-caption">Logout</span>
+    </button>
+  </mat-list-item>
+</mat-nav-list>

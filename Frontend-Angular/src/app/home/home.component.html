@@ -1,0 +1,49 @@
+<div class="header">
+    <h1 class="mat-display-2">Claim Management System</h1>
+    <h3 class="mat-display-1">manage your claims, bills and more easily and be upto date</h3>
+</div>
+<div fxLayout.xs="column" fxLayout="row wrap" fxLayoutAlign="center  stretch" fxLayoutGap="5%" ngClass.gt-xs="ml-10">
+    <mat-card routerLink="/submitclaim" routerLinkActive="active" fxFlex.sm="0 1 calc(50%-10px)"
+        fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)" class="s">
+        <mat-card-header>
+            <mat-card-title>Submit Claim</mat-card-title>
+            <mat-card-subtitle>submit your claim here</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                you can submit your claim amount
+                on one click you just have give
+                your member id, policy id and amount you want to claim
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card routerLink="/claimstatus" routerLinkActive="active" fxFlex.sm="0 1 calc(50%-10px)"
+        fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)" class="c">
+        <mat-card-header>
+            <mat-card-title>Claim Status</mat-card-title>
+            <mat-card-subtitle>check your claim status</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                you can check your claim status
+                on one click you just have give
+                your member id, policy id and claim id
+            </p>
+        </mat-card-content>
+    </mat-card>
+    <mat-card routerLink="/viewbill" routerLinkActive="active" fxFlex.sm="0 1 calc(50%-10px)"
+        fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)" class="v">
+        <mat-card-header>
+            <mat-card-title>View Bill</mat-card-title>
+            <mat-card-subtitle>view your bills now</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                you can view your all bills
+                on one click you just have give
+                your member id and policy id
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>

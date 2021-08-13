@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs *ngIf="this.service.getLog()">
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>
+    <a routerLink="/home">Claim Management System</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs *ngIf="this.service.getLog()">
+    <ul fxLayout fxLayoutGap="30px" class="navigation-items">
+      <li routerLinkActive="activate">
+        <a routerLink="/home">Home</a>
+      </li>
+      <li routerLinkActive="activate">
+        <a routerLink="/submitclaim">Submit Claim</a>
+      </li>
+      <li routerLinkActive="activate">
+        <a routerLink="/claimstatus">Claim Status</a>
+      </li>
+      <li routerLinkActive="activate">
+        <a routerLink="/viewbill">View Bill</a>
+      </li>
+      <li routerLinkActive="active">
+        <a routerLink="/">Logout</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
